@@ -1,0 +1,38 @@
+# pip install streamlit  
+# pip install yfinance 
+# pip install python-dotenv
+# python.exe -m pip install --upgrade pip
+# pip install google-genai
+
+
+# rag_engine.py
+
+ import os
+import textwrap
+from typing import List
+
+import numpy as np
+from dotenv import load_dotenv
+
+
+
+# app.py
+
+import streamlit as st
+import pandas as pd
+from data_fetcher import fetch_company_data
+from analyzer import analyze_financials, generate_advisory
+from rag_engine import build_rag_context, generate_advice
+
+
+ # data_fetcher.py
+
+ import time
+
+import yfinance as yf
+
+# analyzer.py
+ _________________________
+
+#to run the app, use the command below in the terminal
+# streamlit run app.py
