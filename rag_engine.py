@@ -9,7 +9,7 @@ from typing import List
 
 import numpy as np
 from dotenv import load_dotenv
-
+## required 
 load_dotenv()
 
 _GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
